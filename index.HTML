@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Dancing+Script:wght@700&family=Great+Vibes&family=Kanit:wght@200;300;400;500;600&family=Lato:wght@400;700;900&family=Lobster+Two:wght@700&family=Montserrat:ital,wght@0,500;0,600;1,600&family=Mukta:wght@200;400;600;800&family=Poppins:wght@200;400;500;600;800&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="logo">
+        <h1>Quiz <span>App</span></h1>
+      </div>
+      <div id="text-container">
+        <h1>Welcome in this Quiz Challenge </h1>
+        <h1>Here you can test your knowledge about computers in a fun environment</h1>
+                 <!-- <i class="fa-regular fa-face-smile"></i> -->
+        <h3>Rules :</h3>
+        <ol>
+            <li>Here you have to answer to 10 questions , your each right answer will give you an increment of 5 in your scoreboard.</li>
+            <li>To won this quiz challenge you have to score 35 and above out of 50.</li>
+            <li>You can skip any question if you don't know the answer by simply clicking on submit button.</li>
+            <li>If you can't complete the challlenge in given time, it will calculate your obtained score and show you your results</li>
+        </ol>
+        <button onclick="startquiz()">Start Challenge</button>
+      </div>
+      <div id="quiz-container">
+        <div id="sec1">
+          <div id="no-of-que">
+            <h1>
+              Question
+              <span id="quesnospan" class="quesnospanclass">1</span> out of 10
+            </h1>
+          </div>
+          <div id="score">
+            <h1>
+              <i class="fa-solid fa-star"></i> Score:
+              <span id="scorespan">00</span>
+            </h1>
+          </div>
+          <div id="timer">
+            <h1>
+              <i class="fa-solid fa-clock"></i> 00 :
+              <span id="timerspan">60</span>
+            </h1>
+          </div>
+        </div>
+        <div id="sec2">
+          <div id="question">
+            <div id="que-title">
+              <h1>Que: <span class="quesnospanclass">1</span></h1>
+            </div>
+            <div id="que-text">
+              <h1 id="que-text-h1">
+                Speed of CPU in the case of mini computers is?
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div id="sec3">
+          <div id="options">
+            <ol>
+              <li class="option" value="1" onclick="selectoption1()" id="1">
+                10-30 MIPS
+              </li>
+              <li class="option" value="2" onclick="selectoption2()" id="2">
+                20-50 MIPS
+              </li>
+              <li class="option" value="3" onclick="selectoption3()" id="3">
+                60-90 MIPS
+              </li>
+              <li class="option" value="4" onclick="selectoption4()" id="4">
+                20-90 MIPS
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div id="sec4">
+          <button onclick="submit()">Submit</button>
+        </div>
+      </div>
+
+      <div id="gif-container">
+        <div id="windiv">
+          <img id="win" src="./images/winner-icegif-7.gif" alt="" />
+          <h3>Your Score is : <span id="finalscoreofwin"></span></h3>
+          <h1>You Won</h1>
+        </div>
+        <div id="lossdiv" data-aos="fade-down" data-aos-duration="2000">
+          <img id="win" src="./images/giphy.gif" alt="" />
+          <h3>Your Score is : <span id="finalscoreofloss"></span></h3>
+          <h1>You Lose</h1>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>Created By Divyanjali Soni</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

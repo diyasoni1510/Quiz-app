@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "kanit",sans-serif;
+    background-image: linear-gradient(#ddd6f3 , #faaca8);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#container{
+    width: 100%;
+    height: 92vh;
+}
+#logo h1{
+    color: #faaca8;
+    border-bottom: 2px solid #fff;
+    margin-left: 2rem;
+}
+#logo h1 span{
+    color: #ddd6f3;
+    color: grey;
+}
+/* ******************************text-container********************* */
+#text-container{
+    width: 50%;
+    height:450px ;
+    box-sizing: border-box;
+    position: relative;
+    top: 15%;
+    left: 25%;
+}
+#text-container h1{
+    color: #faaca8;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 5px #ddd6f3;
+}
+#text-container h3{
+    width: 15%;
+    text-align: center;
+    background: #faaca8;
+    font-size: 1.5rem;
+}
+#text-container button{
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    inset: 10px;
+    left: 35%;
+    background: #ddd6f3;
+    box-shadow: 1px 4px 2px 2px #fff;
+    transition: all 1s;
+}
+#text-container button:hover{
+    box-shadow: 4px 0px 2px 2px #fff;
+}
+#text-container button:active{
+    box-shadow: none;
+}
+/* ***********************************quiz-container******************* */
+#quiz-container{
+    display: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    height: 450px;
+    background: #fff;
+    background-image: linear-gradient(#faaca8,#ddd6f3);
+
+    flex-direction: column;
+    border-radius: 0px 0px 70px 70px;
+    box-shadow: 2px 2px 3px 3px #fff;
+
+}
+#sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    box-shadow: 0px 2px 2px #ddd6f3;
+
+}
+
+#no-of-que{
+    width: 35%;
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    background: #faaca8;
+}
+#score{
+    width: 30%;
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    background: #faaca8;
+
+}
+#timer{
+    width: 30%;
+    text-align: center;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    background: #faaca8;
+
+}
+/* ********************************sec2************************** */
+#sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    
+}
+#sec2 #question{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+#que-title{
+    width: 20%;
+}
+#que-text{
+    width: 80%;
+    padding:0 1rem;
+}
+#sec2 h1{
+    font-size: 1.5rem;
+}
+#sec2 h1 span{
+    margin-right: 1rem;
+}
+/* ***************************sec3******************************** */
+#sec3{
+    margin-top: 2rem;
+}
+#options{
+    width: 100%;
+    float: right;
+}
+#options ol{
+    list-style: upper-alpha;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#options ol li{
+    width: 30%;
+    margin: 0 1.5rem;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 2px 2px grey;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.clickonli{
+    background: #fff;
+    box-shadow: none;
+}
+#options ol li:active{
+    background: #fff;
+    box-shadow: none;
+}
+#options ol li:visited{
+    background: #fff;
+    box-shadow: none;
+}
+/* *****************************sec4************************ */
+#sec4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+#sec4 button{
+    border: none;
+    background: #ddd6f3;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px 2px grey;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#sec4 button:active{
+    box-shadow: none;
+    background: #fff;
+}
+/* *******************************gif-container********************* */
+#gif-container{
+    text-align: center;
+    display: none;
+}
+#windiv{
+    display: none;
+}
+img#loss{
+    position: relative;
+    text-align: center;
+    width: 400px;
+}
+#lossdiv{
+    display: none;
+}
+img#loss{
+    position: relative;
+    text-align: center;
+    width: 500px;
+}
+#windiv h1, #windiv h3,#lossdiv h1,#lossdiv h3{
+    background: #faaca8;
+    font-size: 1.5rem;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    inset: 20px;
+    left: 30%;
+}
+/* **********************************footer************************* */
+footer{
+    width: 100vw;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+}
